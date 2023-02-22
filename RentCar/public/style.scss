@@ -1,0 +1,314 @@
+body{
+    background-color: rgb(200, 180, 156);
+    font-family: Goudy Old Style;
+
+    nav{
+        padding: 0 20px;
+        background-color: rgb(251, 223, 182);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgb(183, 140, 76);
+
+        .log{
+            display: flex;
+            list-style-type: none;
+            border-left: 1px solid black;
+            padding-left: 5px;
+            gap: 10px;
+
+            li{
+                border: 1px solid black;
+                padding: 3px 6px;
+                border-radius: 5px;
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+
+            :hover{
+                cursor: pointer;
+                background-color: salmon;
+                color: whitesmoke;
+                border: 1px solid black;  
+                transition: all 1s;
+                a{
+                    border: 0px;
+                }
+            }
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        .box1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            
+            div{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                margin: 7px;
+
+                span{
+                    position: absolute;
+                    text-align: center;
+                    opacity: 0;
+                    top: 7px;
+                    left: 7px;
+                    width: 300px;
+                    height: 100%;
+                    background-color: rgb(136, 37, 37);
+                    transition: all 1s;
+
+                    h2{
+                        margin-left: auto;
+                    }
+
+                    img{
+                        width: 95%;
+                        height: 95%;
+                    }
+                }
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0 0 10px rgb(183, 140, 76);
+                    margin: 7px;
+                }
+
+                :hover{
+                    opacity: 0.8;
+                    color: whitesmoke;
+                    transition: all 1s;
+                }
+                
+                .amount{
+                    display: none;
+                }
+            }
+
+            form{
+                width: 100%;
+                input{
+                    text-align: left;
+                    margin-left: 5%;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: rgb(200, 180, 156);
+                    box-shadow: 0 0 10px rgb(183, 140, 76);
+                }
+            }
+        }
+
+        .details{
+            width: 600px;
+            display: none;
+
+            div{
+                width: 100%;
+
+                img{
+                    width: 500px;
+                    margin-left: 20%;
+                }
+            }
+
+            div{
+                width: 100%;
+                position: relative;
+                
+                .rentSpan{
+                    position: absolute;
+                    text-align: center;
+                    opacity: 0.9;
+                    color: whitesmoke;
+                    top: 0px;
+                    left: 0px;
+                    width: 110%;
+                    height: 110%;
+                    background-color: rgb(136, 37, 37);
+                    transition: all 1s;
+                    display: none;
+                }
+    
+                h1{
+                    margin-left: 20%;
+                }
+        
+                h2{
+                    margin-left: 20%;
+                }
+        
+                .dayRent{
+                    margin-left: 20%;
+                    width: 50px;
+                    height: 25px;
+                    background-color: rgb(200, 180, 156);
+                    box-shadow: 0 0 10px rgb(183, 140, 76);
+                }
+        
+                .rent{ margin-left: 70px; }
+            }  
+        }
+
+        .adminPage{
+            width: 100%;
+
+            .add{
+                margin-left: auto;
+                margin-right: auto;
+                display: none;
+                background-color: rgb(251, 223, 182);
+                width: 400px;
+                height: 600px;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 0 7px rgb(183, 140, 76);
+        
+                h3{
+                    margin-bottom: 30px;
+                }
+        
+                input{
+                    margin-bottom: 20px;
+                    height: 25px;
+                    background-color: rgb(200, 180, 156);
+                }
+            }
+    
+            .update{
+                margin-left: auto;
+                margin-right: auto;
+                display: none;
+                background-color: rgb(251, 223, 182);
+                width: 400px;
+                height: 600px;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 0 7px rgb(183, 140, 76);
+        
+                h3{
+                    margin-bottom: 30px;
+                }
+        
+                input{
+                    margin-bottom: 20px;
+                    height: 25px;
+                    background-color: rgb(200, 180, 156);
+                }
+            }
+    
+            .delete{
+                margin-left: auto;
+                margin-right: auto;
+                display: none;
+                background-color: rgb(251, 223, 182);
+                width: 400px;
+                height: 600px;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 0 7px rgb(183, 140, 76);
+        
+                h3{
+                    margin-bottom: 30px;
+                }
+        
+                input{
+                    margin-bottom: 20px;
+                    height: 25px;
+                    background-color: rgb(200, 180, 156);
+                }
+            }
+        }
+
+        .box2{
+            background-color: rgb(251, 223, 182);
+            border-left: 2px solid rgb(183, 140, 76);
+            border-bottom: 2px solid rgb(183, 140, 76);
+            width: 250px;
+            ul{
+                list-style-type: none;
+                height: 500px;
+                
+                li{
+                    border: 1px solid black;
+                    padding: 3px 6px;
+                    margin: 10px;
+                    border-radius: 5px;
+                };
+
+                :hover{
+                    cursor: pointer;
+                    background-color: salmon;
+                    color: whitesmoke;
+                    border: 1px solid black; 
+                    transition: all 1s; 
+                }
+            }
+
+            #admin{
+                display: none;
+            }
+
+            #logOut{
+                margin-top: 80%;
+                display: none;
+            }
+        }
+
+        .order{
+            display: none;
+        }
+    }
+
+    .box3{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(251, 223, 182);
+        width: 400px;
+        height: 600px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 0 7px rgb(183, 140, 76);
+
+        h3{
+            margin-bottom: 30px;
+        }
+
+        input{
+            margin-bottom: 20px;
+            height: 25px;
+            background-color: rgb(200, 180, 156);
+        }
+
+    }
+
+    #click{
+        background-color: rgb(251, 223, 182);
+        border: 1px solid black;
+        padding: 3px 6px;
+        border-radius: 5px;
+        height: 30px;
+        width: 80px;
+        margin-top: 30px;
+        
+        &:hover{
+            cursor: pointer;
+            background-color: salmon;
+            color: whitesmoke;
+            border: 1px solid black; 
+            transition: all 1s; 
+        }
+    }
+}

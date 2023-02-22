@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js"
+    integrity="sha512-rozBdNtS7jw9BlC76YF1FQGjz17qQ0J/Vu9ZCFIW374sEy4EZRbRcUZa2RU/MZ90X2mnLU56F75VfdToGV0RiA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body onload="userHomePage()">
+
+    <nav>
+        <div>
+            <h2>Car Rent</h2>
+        </div>
+        <div class="UserN"></div>
+        <div class="RegLofBtn">
+            <ul class="log">
+                <li><a href="./Registration.html">Registration</a></li>
+                <li><a href="./LogIn.html">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="details"></div>
+        <div class="adminPage">
+            <div class="add">
+                <form onsubmit="handleAddCar(event)">
+                    <h3>Add Vehicle</h3>
+                    <h4>Vehile Type</h4>
+                    <input placeholder="type" type="text" name="carType" required>
+                    <h4>Vehile Name</h4>
+                    <input placeholder="name" type="text" name="carName" required>
+                    <h4>Price per day</h4>
+                    <input placeholder="price" type="number" name="carPrice" required>
+                    <h4>URl</h4>
+                    <input placeholder="URL" type="url" name="src" id=""><br>
+                    <input id="click" type="submit" name="" value="Add">
+                </form>
+            </div>
+            <div class="update">
+                <form onsubmit="handleUpdateCar(event)">
+                    <h3>Update Vehicle</h3>
+                    <h4>Vehile ID</h4>
+                    <input placeholder="id" type="text" name="carId" required >
+                    <h4>Vehile Price</h4>
+                    <input placeholder="price" type="number" name="carPrice" id="">
+                    <h4>Available</h4>
+                    <input placeholder="srock" type="number" name="carAvailable" id=""><br>
+                    <input id="click" type="submit" name="" value="Update">
+                </form>
+            </div>
+            <div class="delete">
+                <form onsubmit="handleDeleteCar(event)">
+                    <h3>Delete Vehicle</h3>
+                    <h4>Vehile ID</h4>
+                    <input placeholder="id" type="text" name="carId" required><br>
+                    <input id="click" type="submit" name="" value="Delete">
+                </form>
+            </div>
+        </div>
+        <div class="box2"> 
+            <ul class="Types">
+                <li id="admin" onclick="allCars()">All vehicles</li>
+                <li id="user" onclick="carsBtn()">Cars</li>
+                <li id="user" onclick="vanBtn()">Van</li>
+                <li id="user" onclick="commBtn()">Commercial</li>
+                <li id="user" onclick="motoBtn()">Motorcycles</li>
+                <li id="user" onclick="findBtn()">Find</li>
+                <li id="admin" onclick="addBtn()">Adding a vehicle</li>
+                <li id="admin" onclick="updateBtn()">Vehicle update</li>
+                <li id="admin" onclick="deleteBtn()">Vehicle deletion</li>
+                <li id="logOut" onclick="handleLogout()">Log Out</li>
+            </ul>
+        </div>
+        <div class="order"></div>
+    </div>
+    
+</body>
+    <script src="./dist/app.js"></script>
+</html>

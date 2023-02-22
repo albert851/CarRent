@@ -1,0 +1,270 @@
+body {
+  background-color: #c8b49c;
+  font-family: Goudy Old Style;
+}
+body nav {
+  padding: 0 20px;
+  background-color: #fbdfb6;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #b78c4c;
+}
+body nav .log {
+  display: flex;
+  list-style-type: none;
+  border-left: 1px solid black;
+  padding-left: 5px;
+  gap: 10px;
+}
+body nav .log li {
+  border: 1px solid black;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+body nav .log li a {
+  color: black;
+  text-decoration: none;
+}
+body nav .log :hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: whitesmoke;
+  border: 1px solid black;
+  transition: all 1s;
+}
+body nav .log :hover a {
+  border: 0px;
+}
+body .container {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+body .container .box1 div {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 7px;
+}
+body .container .box1 div span {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  top: 7px;
+  left: 7px;
+  width: 300px;
+  height: 100%;
+  background-color: #882525;
+  transition: all 1s;
+}
+body .container .box1 div span h2 {
+  margin-left: auto;
+}
+body .container .box1 div span img {
+  width: 95%;
+  height: 95%;
+}
+body .container .box1 div img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px #b78c4c;
+  margin: 7px;
+}
+body .container .box1 div :hover {
+  opacity: 0.8;
+  color: whitesmoke;
+  transition: all 1s;
+}
+body .container .box1 div .amount {
+  display: none;
+}
+body .container .box1 form {
+  width: 100%;
+}
+body .container .box1 form input {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 25px;
+  background-color: #c8b49c;
+  box-shadow: 0 0 10px #b78c4c;
+}
+body .container .details {
+  width: 600px;
+  display: none;
+}
+body .container .details div {
+  width: 100%;
+}
+body .container .details div img {
+  width: 500px;
+  margin-left: 20%;
+}
+body .container .details div {
+  width: 100%;
+  position: relative;
+}
+body .container .details div .rentSpan {
+  position: absolute;
+  text-align: center;
+  opacity: 0.9;
+  color: whitesmoke;
+  top: 0px;
+  left: 0px;
+  width: 110%;
+  height: 110%;
+  background-color: #882525;
+  transition: all 1s;
+  display: none;
+}
+body .container .details div h1 {
+  margin-left: 20%;
+}
+body .container .details div h2 {
+  margin-left: 20%;
+}
+body .container .details div .dayRent {
+  margin-left: 20%;
+  width: 50px;
+  height: 25px;
+  background-color: #c8b49c;
+  box-shadow: 0 0 10px #b78c4c;
+}
+body .container .details div .rent {
+  margin-left: 70px;
+}
+body .container .adminPage {
+  width: 100%;
+}
+body .container .adminPage .add {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  background-color: #fbdfb6;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 7px #b78c4c;
+}
+body .container .adminPage .add h3 {
+  margin-bottom: 30px;
+}
+body .container .adminPage .add input {
+  margin-bottom: 20px;
+  height: 25px;
+  background-color: #c8b49c;
+}
+body .container .adminPage .update {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  background-color: #fbdfb6;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 7px #b78c4c;
+}
+body .container .adminPage .update h3 {
+  margin-bottom: 30px;
+}
+body .container .adminPage .update input {
+  margin-bottom: 20px;
+  height: 25px;
+  background-color: #c8b49c;
+}
+body .container .adminPage .delete {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  background-color: #fbdfb6;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 7px #b78c4c;
+}
+body .container .adminPage .delete h3 {
+  margin-bottom: 30px;
+}
+body .container .adminPage .delete input {
+  margin-bottom: 20px;
+  height: 25px;
+  background-color: #c8b49c;
+}
+body .container .box2 {
+  background-color: #fbdfb6;
+  border-left: 2px solid #b78c4c;
+  border-bottom: 2px solid #b78c4c;
+  width: 250px;
+}
+body .container .box2 ul {
+  list-style-type: none;
+  height: 500px;
+}
+body .container .box2 ul li {
+  border: 1px solid black;
+  padding: 3px 6px;
+  margin: 10px;
+  border-radius: 5px;
+}
+body .container .box2 ul :hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: whitesmoke;
+  border: 1px solid black;
+  transition: all 1s;
+}
+body .container .box2 #admin {
+  display: none;
+}
+body .container .box2 #logOut {
+  margin-top: 80%;
+  display: none;
+}
+body .container .order {
+  display: none;
+}
+body .box3 {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fbdfb6;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 7px #b78c4c;
+}
+body .box3 h3 {
+  margin-bottom: 30px;
+}
+body .box3 input {
+  margin-bottom: 20px;
+  height: 25px;
+  background-color: #c8b49c;
+}
+body #click {
+  background-color: #fbdfb6;
+  border: 1px solid black;
+  padding: 3px 6px;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+  margin-top: 30px;
+}
+body #click:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: whitesmoke;
+  border: 1px solid black;
+  transition: all 1s;
+}
