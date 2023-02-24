@@ -146,14 +146,14 @@ function deleteCarById(req, res) {
 exports.deleteCarById = deleteCarById;
 function searchFromDB(req, res) {
     return __awaiter(this, void 0, void 0, function () {
-        var category, carrSearch, pattern, carDB, carDB, carDB, error_5;
+        var category, carSearch, pattern, carDB, carDB, carDB, error_5;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 7, , 8]);
                     category = req.params.category;
-                    carrSearch = req.body.carrSearch;
-                    pattern = RegExp(carrSearch);
+                    carSearch = req.body.carSearch;
+                    pattern = RegExp(carSearch);
                     if (!(category === "name")) return [3 /*break*/, 2];
                     return [4 /*yield*/, carModel_1["default"].find({ 'carName': { $regex: pattern } })];
                 case 1:

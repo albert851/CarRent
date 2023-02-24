@@ -64,8 +64,8 @@ export async function deleteCarById(req: express.Request, res: express.Response)
 export async function searchFromDB(req: express.Request, res: express.Response) {
     try {
         const category = req.params.category;
-        const {carrSearch} = req.body;
-        const pattern = RegExp(carrSearch)
+        const {carSearch} = req.body;
+        const pattern = RegExp(carSearch)
 
         if(category === "name"){
             const carDB = await CarModel.find({'carName': {$regex: pattern}});
